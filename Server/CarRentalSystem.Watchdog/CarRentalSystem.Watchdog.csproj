@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>82ef344e-d86d-4a86-84e0-97623d6b0b33</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +15,7 @@
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.UI" Version="3.1.1" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="3.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
   </ItemGroup>
 
 </Project>
