@@ -1,0 +1,6 @@
+1. Create docker files for Server Side
+	- VS add docker support
+2. Create docker file for Client
+	- Manually create it
+	- PS script to test it
+3. Create 

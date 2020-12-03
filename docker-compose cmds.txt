@@ -1,0 +1,13 @@
+docker-compose build
+
+docker-compose up -d
+
+docker-compose down
+
+docker-compose stop
+
+USER: coolcars@crs.com
+PASS: coolcars12!
+
+ADMIN: admin@crs.com
+PASS: adminpass12!
