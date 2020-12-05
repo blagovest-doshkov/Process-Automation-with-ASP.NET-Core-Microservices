@@ -11,3 +11,6 @@ PASS: coolcars12!
 
 ADMIN: admin@crs.com
 PASS: adminpass12!
+
+Car Rental System Personal Token
+d881dabd49901084cbf18101665e300a4a13d65c
