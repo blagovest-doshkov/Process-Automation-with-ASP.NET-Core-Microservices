@@ -11,6 +11,14 @@ pipeline
 			}
 		}
 		
+		stage('Pull Changes') 
+		{
+			steps 
+			{
+				powershell(script: "git pull")
+			}
+		}
+		
 		stage('Run Unit Tests')
 		{
 			steps
@@ -47,6 +55,7 @@ pipeline
 			steps
 			{
 				powershell(script: 'docker-compose down')
+				powershell(script: 'docker volume prune -f')   
 			}
 			post
 			{
