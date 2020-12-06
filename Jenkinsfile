@@ -4,8 +4,8 @@ pipeline
 	
 	environment 
 	{ 
-		PrdVersion = 1.${env.BUILD_ID}
-		DevVersion = 1.0.${env.BUILD_ID}
+		PrdVersion = "1.${env.BUILD_ID}"
+		DevVersion = "1.0.${env.BUILD_ID}"
 	}
 	
 	stages
