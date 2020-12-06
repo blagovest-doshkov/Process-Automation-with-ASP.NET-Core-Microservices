@@ -1,0 +1,5 @@
+  Server=carrental-database;Database=CarRentalIdentityDatabase;User Id=sa; Password=carrentalDatabasePassword12!@;MultipleActiveResultSets=true
+  Server=carrental-database;Database=CarRentalDealersDatabase;User Id=sa; Password=carrentalDatabasePassword12!@;MultipleActiveResultSets=true  
+  Server=carrental-database;Database=CarRentalDealersCronJobsDatabase;User Id=sa; Password=carrentalDatabasePassword12!@;MultipleActiveResultSets=true 
+  Server=carrental-database;Database=CarRentalStatisticsDatabase;User Id=sa; Password=carrentalDatabasePassword12!@;MultipleActiveResultSets=true
+  Server=carrental-database;Database=CarRentalStatisticsCronJobsDatabase;User Id=sa; Password=carrentalDatabasePassword12!@;MultipleActiveResultSets=true
