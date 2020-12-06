@@ -158,7 +158,7 @@ pipeline
 			when { branch 'development' }
 			steps 
 			{
-				withKubeConfig([credentialsId: 'DevServer', serverUrl: 'https://34.123.145.46']) 
+				withKubeConfig([credentialsId: 'DevServer', serverUrl: 'https://35.194.41.204']) 
 				{
 				   powershell(script: 'kubectl apply -f ./k8s/environment/development.yml') 
 				   powershell(script: 'kubectl apply -f ./k8s/databases') 
