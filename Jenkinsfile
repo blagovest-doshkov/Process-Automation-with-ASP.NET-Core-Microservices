@@ -103,7 +103,7 @@ pipeline
 							client.push(${env.PrdVersion})
 							
 						def adminclient = docker.image("blagodockerhub/carrental-admin-client")
-							adminclient.push(${env.PrdVersion}))
+							adminclient.push(${env.PrdVersion})
 							
 						def watchdog = docker.image("blagodockerhub/carrental-watchdog-service")
 							watchdog.push(${env.PrdVersion})
