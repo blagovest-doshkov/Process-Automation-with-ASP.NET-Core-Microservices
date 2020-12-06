@@ -54,7 +54,7 @@ pipeline
 			steps
 			{
 				powershell(script: 'docker-compose up -d')
-				powershell(script: '.Tests/ContainerTests.ps1')
+				powershell(script: './Tests/ContainerTests.ps1')
 			}
 		}
 		
@@ -176,7 +176,7 @@ pipeline
 			steps 
 			{
 				input(message:'Confirm production deployment')
-				withKubeConfig([credentialsId: env.PrdClusterCredentials, serverUrl: "https://34.123.145.46"]) 
+				withKubeConfig([credentialsId: 'DevServer', serverUrl: "https://34.123.145.46"]) 
 				{
 					powershell(script: 'kubectl apply -f ./k8s/environment/production.yml') 
 					powershell(script: 'kubectl apply -f ./k8s/databases') 
