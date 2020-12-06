@@ -141,6 +141,10 @@ pipeline
 							client.push(env.DevVersion)
 							client.push('latest')
 							
+						def clientDev = docker.image("blagodockerhub/carrental-user-client-dev")
+							clientDev.push(env.DevVersion)
+							clientDev.push('latest')
+							
 						def adminclient = docker.image("blagodockerhub/carrental-admin-client")
 							adminclient.push(env.DevVersion)
 							adminclient.push('latest')
