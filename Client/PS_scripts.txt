@@ -1,5 +1,8 @@
 docker build . -t blagodockerhub/carrentalclient:0.1
 
+docker build . -t blagodockerhub/carrentalclient:0.1
+docker build . -t blagodockerhub/carrentalclient:0.1
+
 docker run -p 5001:80 carrentalclient
 
 docker push blagodockerhub/carrentalclient:0.1
