@@ -6,6 +6,7 @@ data:
   seed-initial-data: "True"
   event-bus-host: event-bus
   event-bus-user: rabbitmquser
+  notifications-allowed-origins: http://35.184.95.219
 
 ---
 
