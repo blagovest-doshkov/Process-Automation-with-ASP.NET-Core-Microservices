@@ -88,25 +88,25 @@ pipeline
 					docker.withRegistry('https://index.docker.io/v1/', 'DockerHubCredentialsId') 
 					{
 						def identity = docker.image("blagodockerhub/carrental-identity-service")
-							identity.push(${env.PrdVersion})
+							identity.push(env.PrdVersion)
 							
 						def dealers = docker.image("blagodockerhub/carrental-dealers-service")
-							dealers.push(${env.PrdVersion})
+							dealers.push(env.PrdVersion)
 							
 						def statistics = docker.image("blagodockerhub/carrental-statistics-service")
-							statistics.push(${env.PrdVersion})
+							statistics.push(env.PrdVersion)
 							
 						def notifications = docker.image("blagodockerhub/carrental-notifications-service")
-							notifications.push(${env.PrdVersion})
+							notifications.push(env.PrdVersion)
 							
 						def client = docker.image("blagodockerhub/carrental-user-client")
-							client.push(${env.PrdVersion})
+							client.push(env.PrdVersion)
 							
 						def adminclient = docker.image("blagodockerhub/carrental-admin-client")
-							adminclient.push(${env.PrdVersion})
+							adminclient.push(env.PrdVersion)
 							
 						def watchdog = docker.image("blagodockerhub/carrental-watchdog-service")
-							watchdog.push(${env.PrdVersion})
+							watchdog.push(env.PrdVersion)
 					}
 				}
 			}
@@ -122,31 +122,31 @@ pipeline
 					docker.withRegistry('https://index.docker.io/v1/', 'DockerHubCredentialsId') 
 					{
 						def identity = docker.image("blagodockerhub/carrental-identity-service")
-							identity.push(${env.DevVersion})
+							identity.push(env.DevVersion)
 							identity.push('latest')
 							
 						def dealers = docker.image("blagodockerhub/carrental-dealers-service")
-							dealers.push(${env.DevVersion})
+							dealers.push(env.DevVersion)
 							dealers.push('latest')
 							
 						def statistics = docker.image("blagodockerhub/carrental-statistics-service")
-							statistics.push(${env.DevVersion})
+							statistics.push(env.DevVersion)
 							statistics.push('latest')
 							
 						def notifications = docker.image("blagodockerhub/carrental-notifications-service")
-							notifications.push(${env.DevVersion})
+							notifications.push(env.DevVersion)
 							notifications.push('latest')
 							
 						def client = docker.image("blagodockerhub/carrental-user-client")
-							client.push(${env.DevVersion})
+							client.push(env.DevVersion)
 							client.push('latest')
 							
 						def adminclient = docker.image("blagodockerhub/carrental-admin-client")
-							adminclient.push(${env.DevVersion})
+							adminclient.push(env.DevVersion)
 							adminclient.push('latest')
 							
 						def watchdog = docker.image("blagodockerhub/carrental-watchdog-service")
-							watchdog.push(${env.DevVersion})
+							watchdog.push(env.DevVersion)
 							watchdog.push('latest')
 					}
 				}
